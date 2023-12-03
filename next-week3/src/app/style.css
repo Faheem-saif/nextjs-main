@@ -1,0 +1,58 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+h1 {
+  color: aqua;
+}
+.myNav {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  background-color: #ffffff;
+}
+/* Remove bullets, margin and padding */
+.myNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.myNav li {
+  float:left;
+
+  /* Or you can use display: inline; */
+}
+/* Define the block styling for the links */
+.myNav li a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+}
+/* This is optional, however if you want to display the active link differently apply a background to it */
+.myNav li a.active {
+  background-color: #3786E1;
+}
