@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1{
+color: crimson;
+font-weight: 1000;
+font-size: larger;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: center;
+text-decoration: underline;
+}
+
+h2 {
+color:brown;
+text-align: center;
+
+}
+
+.bgcover {
+ background-color: rgb(197, 211, 90);
+height: 50%;
+width: 50%;
+display: block;
+align-items: center;
+margin: 3%;
+padding: 2%;
+border-color: deepskyblue;
+border-radius: 10%;
+
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgoldenrod;
+    
+}
