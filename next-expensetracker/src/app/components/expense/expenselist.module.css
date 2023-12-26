@@ -1,0 +1,17 @@
+.expenselist{
+    border: 2px solid orange;
+    border-radius: 10px;
+    display: flex;
+   justify-content: space-between;
+ margin: 55px;
+ padding: 12px;
+  text-align: center;
+
+  background-color: darkcyan;
+ }
+ .expenselist h1{
+   color: rgb(240, 240, 240);
+
+ 
+ 
+ }

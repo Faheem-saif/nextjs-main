@@ -4,7 +4,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-margin: 55px;
+margin: 5px;
 padding: 2px;
  text-align: center;
  flex-wrap: wrap;
@@ -30,12 +30,13 @@ border-radius: 7px;
 .exmodal button {
     height: 40px;
     color: white;
-    pad: 10px;
-    font: 900;
+    padding: 10px;
+  font-weight: 900;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 8px;
-    font-weight: bolder;
+     
     background-color:rgb(6, 73, 6);
+    
 }
 .exmodal select{
 
@@ -44,5 +45,5 @@ justify-content: space-around;
   margin: 20px;
   padding: 10px;
  border: 2px solid red;
- 
+ border-radius: 7px;
 }

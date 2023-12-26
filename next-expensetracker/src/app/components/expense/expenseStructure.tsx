@@ -16,9 +16,9 @@ export default function ExpenseStructure() {
     <select>
 
  <option >Select a category</option>
-        {categories.map((cat) => (
-          <option key={cat} value={cat}>
-                                                    {cat}
+        {categories.map((item) => (
+          <option key={item} value={item}>
+                   {item}
                   </option>
                 ))}
          </select>
