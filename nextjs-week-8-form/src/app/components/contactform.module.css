@@ -1,0 +1,10 @@
+ .mainform{
+  border: 2px solid mediumaquamarine;
+  border-radius: 20px;
+  background-color: coral;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+
+ }
