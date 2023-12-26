@@ -1,0 +1,48 @@
+.exmodal{
+   border: 2px solid orange;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+margin: 55px;
+padding: 2px;
+ text-align: center;
+ flex-wrap: wrap;
+ background-color: darkcyan;
+}
+.exmodal h1{
+
+  color: rgb(240, 240, 240);
+  width: 100%;
+
+
+}
+.exmodal input{
+    width:20% ;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 10px;
+ border: 2px solid red;
+border-radius: 7px;
+
+}
+
+.exmodal button {
+    height: 40px;
+    color: white;
+    pad: 10px;
+    font: 900;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    font-weight: bolder;
+    background-color:rgb(6, 73, 6);
+}
+.exmodal select{
+
+height: 40px;
+justify-content: space-around;
+  margin: 20px;
+  padding: 10px;
+ border: 2px solid red;
+ 
+}
