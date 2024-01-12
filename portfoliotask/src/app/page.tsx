@@ -7,10 +7,12 @@ import ContactForm from './components/contactForm'
 export default function Home() {
   return (
    <>
+   <div className={`flex w-full items-center bg-white dark:bg-dark`}> portfolio website
    <Mynavbar/>
    <Herosection/>
    <Aboutme/>
   <ContactForm/>
+  </div>
    </>
   )
 }
