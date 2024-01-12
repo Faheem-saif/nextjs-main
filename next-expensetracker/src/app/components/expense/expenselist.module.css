@@ -2,27 +2,31 @@
     border: 2px solid orange;
     border-radius: 10px;
     display: flex;
-   justify-content: space-between;
- margin: 55px;
- padding: 12px;
-  text-align: center;
-  align-items: center;
+
+    margin: 55px;
+    padding: 12px;
+    text-align: center;
+    align-items: center;
+
+ 
 
   background-color: darkcyan;
  }
  .expenselist h1{
-   color: rgb(240, 240, 240);
+   color: rgb(255, 241, 241);
 
  
  
  }
+
  .buttons button{
+
     justify-content: end;
     background-color: red;
     border-radius: 10px;
     height: 45px;
     margin: 4px;
-    font-weight: 900;
+    font-weight: 1000;
     color: aliceblue;
 
  }
