@@ -10,9 +10,9 @@ export default function header() {
         <div className="md:flex-none w-96 order-2 sm:order-1 flex justify-center py-4 sm:py-0">
             <input type="text" className="input-text"  placeholder="Search..."/>
         </div>
-        <div className="shrink w-80 sm:order-2">
+        <div className="shrink w-80 sm:order-2 ">
             <Link legacyBehavior href={"/"}>
-            <a className="font-bold uppercase text-3xl">Design</a>
+            <a className="font-bold  text-3xl">Faheem Saif</a>
             </Link>
         </div>
         <div className="w-96 order-3 flex justify-center">
