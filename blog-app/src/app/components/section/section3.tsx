@@ -9,6 +9,10 @@ export default function Section3() {
     {bloglatest("img2")}
     {bloglatest("img2")}
     {bloglatest("img1")}
+    {bloglatest("img1")}
+    {bloglatest("img1")}
+    {bloglatest("img1")}
+    {bloglatest("img1")}
     
     </div>
     </section>
@@ -17,7 +21,7 @@ export default function Section3() {
    
 const bloglatest=(image) => {
   return( 
-  <div className='flex flex-col  m-2 p-2'>
+  <div className='flex flex-col  m-2 bg-purple-300  border-purple-950 border-4 rounded-2xl p-2'>
   <Image className='bg-red-700 ' width={300} height={200} src={`/images/${image}.jpg`} alt='noImage'/>
   <h1 className=' font-bold text-2xl text-orange-700 flex justify-center'>Title of the Blog</h1>
   <p className='text-xl '>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, amet ab dolor id mollitia reprehenderit?</p>
