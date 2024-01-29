@@ -16,7 +16,7 @@ export default function DisplayBlog() {
 }
 
 
-const blogsgrid=(image) => {
+const blogsgrid=(imag:any) => {
 return( 
 <div className='flex flex-col m-2 p-2'>
 <Image className='bg-red-700 ' width={300} height={200} src={`/images/${image}.jpg`} alt='noImage'/>

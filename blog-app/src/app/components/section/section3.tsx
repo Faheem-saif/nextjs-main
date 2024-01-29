@@ -19,7 +19,7 @@ export default function Section3() {
   )
 }
    
-const bloglatest=(image) => {
+const bloglatest=(image:any) => {
   return( 
   <div className='flex flex-col  m-2 bg-purple-300  border-purple-950 border-4 rounded-2xl p-2'>
   <Image className='bg-red-700 ' width={300} height={200} src={`/images/${image}.jpg`} alt='noImage'/>
