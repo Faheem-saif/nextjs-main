@@ -8,7 +8,7 @@ export default function DisplayBlog() {
   <div  className='flex'>
     {blogsgrid("img2")}
     {blogsgrid("img1")}
-    {blogsgrid("img3")}
+    {blogsgrid("img2")}
     
     </div>
   </section>
@@ -18,7 +18,7 @@ export default function DisplayBlog() {
 
 const blogsgrid=(image) => {
 return( 
-<div className='flex flex-col'>
+<div className='flex flex-col m-2 p-2'>
 <Image className='bg-red-700 ' width={300} height={200} src={`/images/${image}.jpg`} alt='noImage'/>
 <h1 className=' font-bold text-2xl text-orange-700 flex justify-center'>Title of the Blog</h1>
 <p className='text-xl '>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, amet ab dolor id mollitia reprehenderit?</p>
