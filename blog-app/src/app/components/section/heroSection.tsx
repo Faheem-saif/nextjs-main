@@ -17,19 +17,12 @@ function HeroSection() {
    <section className='py-16' style={bg}>
       <div className=' container mx-auto md:px-20 '> 
             <h1 className='text-center text-4xl pb-12 font-bold '> Trending</h1>
-            <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      ...
-    </Swiper>
-       {slides()}
+     <Swiper>
+     <SwiperSlide>
+     {slides()}
+     </SwiperSlide>
+     </Swiper>
+      
 
       </div>
 
