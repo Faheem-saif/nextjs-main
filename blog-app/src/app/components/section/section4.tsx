@@ -23,7 +23,7 @@ function Section4() {
         </div> 
     
         <div className='item'>
-        <h1 className='font-bold text-4xl py-12 '>Travel</h1>
+        <h1 className='font-bold text-4xl py-12 '>Business</h1>
         <div className='flex flex-col gap-6'>
             {Post()}
             {Post()}
