@@ -4,11 +4,13 @@ import Link from 'next/link';
 import React from 'react'
 import Author from '../_child/author';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore,{} from 'swiper';
 
 import 'swiper/css';
+import { Autoplay } from 'swiper/modules';
 
 function HeroSection() {
-
+ SwiperCore.use([Autoplay])
  const bg={
   background:"url('/images/banner.png') no-repeat",
   backgroundPosition:"right"
@@ -19,10 +21,12 @@ function HeroSection() {
       <div className=' container mx-auto md:px-20 '> 
             <h1 className='text-center text-4xl pb-12 font-bold '> Trending</h1>
      <Swiper
-        spaceBetween={50}
+      
       slidesPerView={1}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}>
+      autoplay={{
+        delay:2000
+      }}
+        >
      <SwiperSlide>
      {slides()}
      </SwiperSlide>
