@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
@@ -17,7 +18,38 @@ function HeroSection() {
    <section className='py-16' style={bg}>
       <div className=' container mx-auto md:px-20 '> 
             <h1 className='text-center text-4xl pb-12 font-bold '> Trending</h1>
-     <Swiper>
+     <Swiper
+        spaceBetween={50}
+      slidesPerView={1}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}>
+     <SwiperSlide>
+     {slides()}
+     </SwiperSlide>
+     <SwiperSlide>
+     {slides()}
+     </SwiperSlide>
+     <SwiperSlide>
+     {slides()}
+     </SwiperSlide>
+     <SwiperSlide>
+     {slides()}
+     </SwiperSlide>
+     <SwiperSlide>
+     {slides()}
+     </SwiperSlide>
+     <SwiperSlide>
+     {slides()}
+     </SwiperSlide>
+     <SwiperSlide>
+     {slides()}
+     </SwiperSlide>
+     <SwiperSlide>
+     {slides()}
+     </SwiperSlide>
+     <SwiperSlide>
+     {slides()}
+     </SwiperSlide>
      <SwiperSlide>
      {slides()}
      </SwiperSlide>
