@@ -1,55 +1,79 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
+import Author from '../_child/author';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
 
 function HeroSection() {
+
+ const bg={
+  background:"url('/images/banner.png') no-repeat",
+  backgroundPosition:"right"
+ }
   return (
-   <section  className='flex p-5 justify-between m-3 '>
-     {/* <div className="grid md:grid-cols-2">
-            <div className="image">
-                  <Link legacyBehavior  href={"/"}><a><Image src={"/images/img1.jpg"} width={600} height={600} alt='Image' /></a></Link>
-            </div>
-            <div className="info flex justify-center flex-col">
-                <div className="cat">
-                      <Link legacyBehavior href={"/"}><a className="text-orange-600 hover:text-orange-800">Business, Travel</a></Link>
-                      <Link legacyBehavior href={"/"}><a className="text-gray-800 hover:text-gray-600">- July 3, 2022</a></Link>
-                </div>
-                <div className="title">
-                      <Link legacyBehavior  href={"/"}><a className="text-3xl md:text-6xl font-bold text-gray-800 hover:text-gray-600">Your most unhappy customers are your greatest source of learning</a></Link>
-                </div>
-                <p className="text-gray-500 py-3">
-                    Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind 
-                    text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
-                </p>
-                <h1>author</h1>
-            </div>
+ 
+   <section className='py-16' style={bg}>
+      <div className=' container mx-auto md:px-20 '> 
+            <h1 className='text-center text-4xl pb-12 font-bold '> Trending</h1>
+            <Swiper
+      spaceBetween={50}
+      slidesPerView={3}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      <SwiperSlide>Slide 1</SwiperSlide>
+      <SwiperSlide>Slide 2</SwiperSlide>
+      <SwiperSlide>Slide 3</SwiperSlide>
+      <SwiperSlide>Slide 4</SwiperSlide>
+      ...
+    </Swiper>
+       {slides()}
 
-        </div> */}
-        
-         <div>
-            <Link href={"#"}>
-                  <Image src={"/images/img1.jpg"} width={600} height={600} alt='Hero Image'/>
-            </Link>
-         </div>
-         <div className='items-center justify-center  '>
-            <div className='flex gap-3 m-4'>
-            <Image className=' rounded-full ' src={"/images/img1.jpg"} width={45} height={45} alt='Hero Image'/>
-
-            <div className='text-red-600 font-extrabold text-xl'>Muhammad Faheem </div>
-             </div>
-             <div className='m-4 p-3'>
-             <div>
-                   <h1 className='text-yellow-600 font-extrabold text-2xl' >Heading of the Blog</h1>
-             </div>
-             <div>
-                    <p className='font-xl
-                      font-extrabold text-neutral-800 '>Lorem ipsum dolor sit amet consectetur </p>
-             </div>
-             </div>
-        </div>
+      </div>
 
    </section>
+  
   )
-}
+  }
 
 export default HeroSection;
+
+
+
+
+
+function slides() {
+  return (
+   <div className='grid md: grid-cols-2'>
+      <div className="image">
+            <Link legacyBehavior href={"#"}><a>
+            <Image src={"/images/img1.jpg"} width={600} height={600} alt='heroimage'></Image></a></Link>
+     
+      </div>
+      <div className='info flex justify-center flex-col'>
+            <div className="dtae ">
+            <Link  legacyBehavior href={"/"}><a className='text-orange-500 hover:text-orange-600  '>
+           Business, Travel</a></Link>  
+            <Link  legacyBehavior href={"/"}><a className='text-gray-500 hover:text-gray-600  '>
+           -July 20,2023</a></Link>  
+            </div>
+            <div className='title'>
+            <Link  legacyBehavior href={"/"}><a className='text-3xl md:text-6xl font-bold text-gray-700 hover:text-gray-900 '>
+                   Your most Unhappy customers are your greatest source of learning</a></Link>  
+
+            </div>
+            <p className='text-gray-500 text-3xl py-3'>
+            Your most Unhappy customers are your greatest source of learning. So review your product for the intense cure of that thingn and this will elevate your intance of learning .Your most Unhappy customers are your greatest source of learning.
+            </p>
+                <Author/>
+
+               
+      </div>
+
+
+
+   </div>
+  )
+}

@@ -4,15 +4,13 @@ export default function Section3() {
   return (
 
   <section>
-  =<h1 className=' flex justify-center items-cente font-extrabold text-yellow-600 text-4xl m-2 p-3'>Blogs </h1>
+  =<h1 className=' flex justify-center items-cente font-extrabold text-yellow-600 text-4xl m-2 p-3'>Related Blogs </h1>
   <div  className='flex'>
     {bloglatest("img2")}
     {bloglatest("img2")}
     {bloglatest("img1")}
     {bloglatest("img1")}
-    {bloglatest("img1")}
-    {bloglatest("img1")}
-    {bloglatest("img1")}
+   
     
     </div>
     </section>
